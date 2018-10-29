@@ -7,7 +7,8 @@ defmodule MyWay.MixProject do
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      elvis: elvis(),
     ]
   end
 
@@ -21,8 +22,15 @@ defmodule MyWay.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:dep_from_hexpm, "~> 0.3.0"},
-      # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"},
+      {:elvis, "~> 0.4.1", hex: :elvis_core},
     ]
+  end
+
+  defp elvis do
+    [%{
+      dirs: ['src'],
+      filter: '*.erl',
+      ruleset: :erl_files
+    }]
   end
 end

@@ -1,0 +1,6 @@
+%{
+  "aleppo": {:hex, :inaka_aleppo, "1.1.1", "b0f7d05a118c5ebc3a735d68e92a7bd5837fe53455495ede37cf0aa8ba4912e3", [:rebar3], [], "hexpm"},
+  "elvis": {:hex, :elvis_core, "0.4.1", "3f344a1f1b387ff0a46ed7ea6332575ced62c547a6d1a72a3c9151d2600c3f3f", [:rebar3], [{:katana_code, "0.1.2", [hex: :katana_code, repo: "hexpm", optional: false]}, {:zipper, "1.0.1", [hex: :zipper, repo: "hexpm", optional: false]}], "hexpm"},
+  "katana_code": {:hex, :katana_code, "0.1.2", "347d42d5e89ac6c4bf8d02b64633ac1bfe14b7724b5910260d39efeafe737f01", [:rebar3], [{:aleppo, "1.1.1", [hex: :inaka_aleppo, repo: "hexpm", optional: false]}], "hexpm"},
+  "zipper": {:hex, :zipper, "1.0.1", "3ccb4f14b97c06b2749b93d8b6c204a1ecb6fafc6050cacc3b93b9870c05952a", [:"erlang.mk", :rebar], [], "hexpm"},
+}
